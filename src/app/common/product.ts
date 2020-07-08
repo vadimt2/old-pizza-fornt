@@ -1,5 +1,5 @@
-import { IProduct } from '../Interfaces/iproduct';
-import { ICategoryItems } from '../Interfaces/icategory-items';
+import { IProduct } from '../interfaces/iproduct';
+import { ICategoryItems } from '../interfaces/icategory-items';
 
 export class Product implements IProduct{
     id: number;
@@ -12,7 +12,7 @@ export class Product implements IProduct{
     available: boolean;
     discount?: number;
     categoryItems:ICategoryItems[];
-    images: import("../Interfaces/iimages").IImages[];
+    images: import("../interfaces/iimages").IImages[];
     total: number;
     parentItemId?: number;
     parentItem: IProduct;

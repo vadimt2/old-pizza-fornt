@@ -12,13 +12,13 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { ProductService } from './services/Products/product.service';
 import { CurrencyPipe } from '@angular/common';
-import { CartService } from './services/cart/cart.service';
 import { GetCurrencyService } from './services/get-currency/get-currency.service';
 import { ShippingService } from './services/shipping/shipping.service';
 import { OrderService } from './services/order/order.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ProductService } from './services/products/products.service';
+import { CartService } from './services/cart/cart.service';
 
 
 

@@ -1,13 +1,12 @@
 import { Component, OnInit, NgZone, ApplicationRef, ChangeDetectorRef } from '@angular/core';
-import { CartService } from '../Services/cart/cart.service';
+import { CartService } from '../services/cart/cart.service';
 import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ProductService } from '../Services/Products/product.service';
-import { IProduct } from '../Interfaces/iproduct';
+import { IProduct } from '../interfaces/iproduct';
 import { DecimalPipe, CurrencyPipe } from '@angular/common';
 import { GetCurrencyService } from '../services/get-currency/get-currency.service';
 import { ShippingService } from '../services/shipping/shipping.service';
-import { IShipping } from '../Interfaces/ishipping';
+import { IShipping } from '../interfaces/ishipping';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { OrderDataAppService } from '../services/order/order-data-app.service';
 

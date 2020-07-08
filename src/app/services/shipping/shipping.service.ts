@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment , endPoint} from '../../../environments/environment';
-import { IProduct } from 'src/app/Interfaces/iproduct';
-import { IShipping } from 'src/app/Interfaces/ishipping';
+import { IProduct } from 'src/app/interfaces/iproduct';
+import { IShipping } from 'src/app/interfaces/ishipping';
 
 
 @Injectable({

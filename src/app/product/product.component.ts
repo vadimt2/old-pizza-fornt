@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../Services/Products/product.service';
-import { IProduct } from '../Interfaces/iproduct';
+import { IProduct } from '../interfaces/iproduct';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, EMPTY, Subject } from 'rxjs';
 import { concatMap, subscribeOn, map, filter } from 'rxjs/operators';
 import { Product } from '../common/product';
-import { CartService } from '../Services/cart/cart.service';
 import { GetCurrencyService } from '../services/get-currency/get-currency.service';
+import { ProductService } from '../services/products/products.service';
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-product',

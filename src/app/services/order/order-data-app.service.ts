@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IOrder } from 'src/app/Interfaces/iorder';
+import { IOrder } from 'src/app/interfaces/iorder';
 
 @Injectable({
   providedIn: 'root'

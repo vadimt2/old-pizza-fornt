@@ -1,6 +1,6 @@
-import { IUser } from '../Interfaces/iuser';
-import { IOrder } from '../Interfaces/iorder';
-import { IRole } from '../Interfaces/irole';
+import { IUser } from '../interfaces/iuser';
+import { IOrder } from '../interfaces/iorder';
+import { IRole } from '../interfaces/irole';
 
 export class User implements IUser{
     

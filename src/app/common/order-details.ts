@@ -1,6 +1,6 @@
-import { IOrderDetails } from '../Interfaces/iorder-details';
-import { IOrder } from '../Interfaces/iorder';
-import { IProduct } from '../Interfaces/iproduct';
+import { IOrderDetails } from '../interfaces/iorder-details';
+import { IOrder } from '../interfaces/iorder';
+import { IProduct } from '../interfaces/iproduct';
 
 export class OrderDetails implements IOrderDetails{
     id: number;

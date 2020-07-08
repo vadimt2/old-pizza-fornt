@@ -1,7 +1,7 @@
-import { IOrder } from '../Interfaces/iorder';
-import { IShipping } from '../Interfaces/ishipping';
-import { IUser } from '../Interfaces/iuser';
-import { IOrderDetails } from '../Interfaces/iorder-details';
+import { IOrder } from '../interfaces/iorder';
+import { IShipping } from '../interfaces/ishipping';
+import { IUser } from '../interfaces/iuser';
+import { IOrderDetails } from '../interfaces/iorder-details';
 
 export class Order implements IOrder {
     id: number;
@@ -14,7 +14,7 @@ export class Order implements IOrder {
     total: number;
     note: string;
     tax: number;
-    bellingAndShippInfo: import("../Interfaces/ibelling-shipping-info").IBellingAndShippInfo[];
+    bellingAndShippInfo: import("../interfaces/ibelling-shipping-info").IBellingAndShippInfo[];
     OrderDetails: IOrderDetails[];
 
 }

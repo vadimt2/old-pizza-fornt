@@ -1,6 +1,6 @@
-import { IBellingAndShippInfo } from '../Interfaces/ibelling-shipping-info';
-import { IOrder } from '../Interfaces/iorder';
+import { IOrder } from '../interfaces/iorder';
 import { BellingOrShipping } from './belling-or-shipping.enum';
+import { IBellingAndShippInfo } from '../interfaces/ibelling-shipping-info';
 
 export class BellingAndShippInfo implements IBellingAndShippInfo {
     iId: number;

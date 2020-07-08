@@ -1,8 +1,8 @@
 import { Component, OnInit, Renderer2, Input, EventEmitter, Output } from '@angular/core';
-import { ProductService } from '../Services/Products/product.service';
-import { IProduct } from '../Interfaces/iproduct';
-import { CartService } from '../Services/cart/cart.service';
+import { IProduct } from '../interfaces/iproduct';
 import { GetCurrencyService } from '../services/get-currency/get-currency.service';
+import { ProductService } from '../services/products/products.service';
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-products',

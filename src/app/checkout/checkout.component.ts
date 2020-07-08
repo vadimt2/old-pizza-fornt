@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../Services/cart/cart.service';
-import { IProduct } from '../Interfaces/iproduct';
-import { Router, ActivatedRoute } from '@angular/router';
+import { IProduct } from '../interfaces/iproduct';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { OrderDataAppService } from '../services/order/order-data-app.service';
-import { FormGroup, FormControl, Validators, AbstractControl, ValidatorFn, FormBuilder, ValidationErrors } from '@angular/forms';
-import { Order } from '../common/order';
-import { IOrder } from '../Interfaces/iorder';
-import { BellingAndShippInfo } from '../common/belling-and-shipp-info';
-import { IBellingAndShippInfo } from '../Interfaces/ibelling-shipping-info';
-import { BellingOrShipping } from '../common/belling-or-shipping.enum';
-import { User } from '../common/user';
-import { IUser } from '../Interfaces/iuser';
-import { IOrderDetails } from '../Interfaces/iorder-details';
-import { OrderDetails } from '../common/order-details';
 import { OrderService } from '../services/order/order.service';
+import { Router, ActivatedRoute } from '@angular/router';
 import { GetCurrencyService } from '../services/get-currency/get-currency.service';
+import { IBellingAndShippInfo } from '../interfaces/ibelling-shipping-info';
+import { BellingAndShippInfo } from '../common/belling-and-shipp-info';
+import { BellingOrShipping } from '../common/belling-or-shipping.enum';
+import { OrderDetails } from '../common/order-details';
+import { IOrderDetails } from '../interfaces/iorder-details';
+import { IOrder } from '../interfaces/iorder';
+import { IUser } from '../interfaces/iuser';
+import { User } from '../common/user';
+import { Order } from '../common/order';
+import { CartService } from '../services/cart/cart.service';
 
 
 @Component({
