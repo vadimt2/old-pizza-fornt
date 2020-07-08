@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductService } from './Services/Products/product.service';
+import { CartService } from './Services/cart/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ClientPizzaProj';
+
+  products: any = [];
+
+  constructor() {}
+
+  ngOnInit() {
+
+  }
 }
