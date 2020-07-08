@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './header/nav/nav.component';
 import { ProductComponent } from './product/product.component';
@@ -12,9 +12,9 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { ProductService } from './Services/Products/product.service';
+import { ProductService } from './services/Products/product.service';
 import { CurrencyPipe } from '@angular/common';
-import { CartService } from './Services/cart/cart.service';
+import { CartService } from './services/cart/cart.service';
 import { GetCurrencyService } from './services/get-currency/get-currency.service';
 import { ShippingService } from './services/shipping/shipping.service';
 import { OrderService } from './services/order/order.service';
@@ -44,6 +44,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     MDBBootstrapModule.forRoot(),
   ],
   providers: [ProductService, CurrencyPipe, CartService, GetCurrencyService, ShippingService, OrderService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
